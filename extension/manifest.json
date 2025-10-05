@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Transcriber",
+  "description": "Capture Google Meet audio and transcribe in real-time.",
+  "version": "0.1.0",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "storage",
+    "tabCapture",
+    "offscreen",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Meet Transcriber",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "icons": {}
+}

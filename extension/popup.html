@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Meet Transcriber</title>
+    <link rel="stylesheet" href="popup.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meet Transcriber</h1>
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+        <button id="copyBtn" title="Copy transcript" disabled>Copy</button>
+        <button id="clearBtn" title="Clear transcript" disabled>Clear</button>
+      </div>
+      <div class="status" id="status">Idle</div>
+      <pre id="transcript" class="transcript"></pre>
+      <div class="footer">
+        <a href="#" id="openOptions">Options</a>
+      </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
